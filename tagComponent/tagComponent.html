@@ -1,0 +1,12 @@
+<div>Tag Component</div>
+<div data-sly-use.model="com.ttn.demo.core.models.TagComponentModel">
+    <sly data-sly-test="${model.links}">
+        <ul data-sly-list.link="${model.links}">
+            <li><a href="${link}">${link}</a></li>
+        </ul>
+    </sly>
+    <sly data-sly-test="${!model.links}">
+        <div>There are no pages with the given tag</div>
+    </sly>
+</div>
+
